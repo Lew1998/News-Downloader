@@ -1,0 +1,39 @@
+#Пощупать можно по url
+# http://localhost:8080/swagger-ui/index.html
+
+server:
+  port: 8080
+
+buffer:
+  limit: 10
+
+thread:
+  pool:
+    size: 5
+    limitPerThread: 10
+
+
+# максимальное число статей которое скачает программа
+common:
+  count:
+    download:
+      article: 100
+
+api:
+  base:
+    url: https://api.spaceflightnewsapi.net/v3/articles
+
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: user
+    password: user
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect

@@ -1,0 +1,13 @@
+package com.filippov.newsdownloader;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class NewsDownloaderApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
